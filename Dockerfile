@@ -1,3 +1,6 @@
-from python:3.8:-slim-buster
-
-Expose 8080
+FROM python:3.8-alpine
+RUN mkdir /app
+ADD . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+CMD ["python", "app.py"]
