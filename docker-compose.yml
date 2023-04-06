@@ -1,0 +1,16 @@
+version: '3.2'
+
+services:
+  example-python-svc:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image:
+      example-python
+    ports:
+      - '3502:8080'
+    networks:
+      - testing
+networks:
+  testing:
+    external: true
