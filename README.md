@@ -5,3 +5,6 @@ python-base-service is a base python service using flask.
 ## Install flask:
 - Local: `pip install flask`
 - Or using requirements.txt 
+## Start Docker at local with `docker-compose.yml`
+- Run this command to create network in Docker-Compose: `docker network create testing`
+- Run our service at local with `docker-compose`
